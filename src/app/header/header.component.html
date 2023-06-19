@@ -1,0 +1,20 @@
+<div class="header">
+    <div class="head">
+        <div class="welcome">Welcome To Dashboard</div>
+    <div class="user">
+        <div class="user-name">Genius</div>
+        <div class="user-image">G</div>
+    </div>
+    </div>
+    <div class="filters">
+        <select class="sectors filter" [disabled]="!selectFiltersEnabled" (change)="onOptionSelect($event,'sector')">
+            <option *ngFor="let option of sectors" value="{{option}}">{{option}}</option>
+        </select>
+        <select class="impacts filter" [disabled]="!selectFiltersEnabled" (change)="onOptionSelect($event,'impact')">
+            <option *ngFor="let option of impact" value="{{option}}">{{option}}</option>
+        </select>
+        <select class="swot filter" [disabled]="!selectFiltersEnabled" (change)="onOptionSelect($event,'swot')">
+            <option *ngFor="let option of swot" value="{{option}}">{{option}}</option>
+        </select>
+    </div>
+</div>

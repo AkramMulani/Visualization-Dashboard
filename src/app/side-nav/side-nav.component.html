@@ -1,0 +1,45 @@
+
+<div class="nav-items">
+    <a routerLink="/dashboard/main">
+        <div class="nav-item" (click)="loadDashboard()">
+            <i class="fas fa-chart-line"></i>
+            <span>Dashboard</span>
+        </div>
+    </a>
+
+    <a routerLink="/dashboard/locations">
+        <div class="nav-item" (click)="loadLocations()">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Locations</span>
+        </div>
+    </a>
+    
+    <a routerLink="/dashboard/topics">
+        <div class="nav-item" (click)="loadTopics()">
+            <i class="fas fa-book"></i>
+            <span>Topics</span>
+        </div>
+    </a>
+    
+    <a routerLink="/dashboard/topics/titles">
+        <div class="nav-item" (click)="loadTitles()">
+            <i class="fas fa-heading"></i>
+            <span>Titles</span>
+        </div>
+    </a>
+    
+    <a routerLink="/dashboard/contact-us">
+        <div class="nav-item" (click)="loadContactUs()">
+            <i class="fas fa-envelope"></i>
+            <span>Contact Us</span>
+        </div>
+    </a>
+    
+    <a routerLink="/dashboard/help">
+        <div class="nav-item" (click)="loadHelp()">
+            <i class="fas fa-question-circle"></i>
+            <span>Help</span>
+        </div>
+    </a>
+
+</div>

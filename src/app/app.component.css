@@ -1,0 +1,15 @@
+.main-container {
+    display: flex;
+    .side-nav {
+        width: 250px;
+        min-width: 200px;
+        min-height: calc(100vh - 70px);
+        background-color: #113c60;
+        color: #fff;
+        box-shadow: 5px 5px 5px #939393;
+    }
+    .main {
+        padding: 20px;
+        overflow: auto;
+    }
+}

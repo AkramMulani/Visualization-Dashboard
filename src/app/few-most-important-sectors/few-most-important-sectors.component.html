@@ -1,0 +1,16 @@
+<div class="imp-container">
+    <p class="head">Few Most Important Sectors</p>
+    <div class="sectors-wrapper">
+        <div class="sectors" *ngFor="let op of response">
+            <div class="name">{{op[0]}}</div>
+            <div class="swot">{{op[1]}}</div>
+            <div class="pestle">{{op[2]}}</div>
+            <div class="start-end">({{op[3]}}-{{op[4]}})</div>
+            <div class="impact"
+                [ngClass]="{
+                    high: op[5]==='4',
+                    low: op[5]==='3'
+                }">{{op[5]}}</div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+<div class="container">
+
+    <div class="top"><app-topics-by-duration></app-topics-by-duration></div>
+
+    <div class="middle">
+        <div class="left"><app-topics-pie-chart></app-topics-pie-chart></div>
+        <div class="right"><app-topics-spline-chart></app-topics-spline-chart></div>
+    </div>
+
+    <div class="bottom">
+        <div class="filters">
+            <select class="topic filter" (change)="changeTopics($event)">
+                <option *ngFor="let topic of topics" value="{{topic}}">{{topic}}</option>
+            </select>
+        </div>
+        <h1>Topics with their Sectors</h1>
+        <div class="colors">
+            <p><b>Categories by duration (yrs) :</b></p>
+            <p class="color">High</p><div class="high c"></div>
+            <p class="color">Average</p><div class="average c"></div>
+            <p class="color">Medium</p><div class="medium c"></div>
+            <p class="color">Low</p><div class="low c"></div>
+        </div>
+        <div class="cards">
+            <div class="card" *ngFor="let sector of sectors; let i = index"
+                [ngClass]="{
+                    high: durations[i] > 12,
+                    average: durations[i] > 8 && durations[i] <=12,
+                    medium: durations[i] > 5 && durations[i] <=8,
+                    low: durations[i] <= 5
+                }">
+                <div class="left">
+                    <p class="line">Sector :{{sector}}</p>
+                    <p class="line">Topic : {{topic[i]}}</p>
+                </div>
+                <div class="right">
+                    <p class="line">Duration : {{durations[i]}} years</p>
+                    <p class="line">Intensity :{{intensities[i]}}</p>
+                    <p class="line">Added on :({{addedOn[i]}})</p>
+                    <p class="line">Published on : ({{publishedOn[i]}})</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

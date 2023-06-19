@@ -1,0 +1,50 @@
+.widget-container {
+    display: flex;
+    align-items: space-between;
+    .widget {
+        width: 225px;
+        height: 175px;
+        background-color: #fff;
+        border-radius: 5px;
+        color: #fff;
+        margin: 10px;
+        box-shadow: 5px 5px 5px #939393;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        padding: 20px;
+        &.red { background-color: rgb(126, 5, 5);}
+        &.green { background-color: rgb(4, 67, 66);}
+        &.yellow { background-color: rgb(237, 158, 32);}
+        &.blue { background-color: rgb(105, 32, 251);}
+        @media only screen and (max-width:1600px) {
+            width: 250px;
+        }
+        @media only screen and (max-width:1500px) {
+            width: 240px;
+        }
+        @media only screen and (max-width:1400px) {
+            width: 230px;
+        }
+        @media only screen and (max-width:1200px) {
+            width: 220px;
+        }
+        .value {
+            margin: 20px;
+            .top {
+                align-content: center;
+                font-size: 30px;
+                text-align: center;
+            }
+            .bottom {
+                align-content: center;
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+    }
+}
+i {
+    font-size: 35px;
+    padding: 10px;
+}

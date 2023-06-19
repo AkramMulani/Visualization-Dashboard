@@ -1,0 +1,38 @@
+<div class="widget-container">
+    <div class="widget red">
+        <div class="icon">
+            <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <div class="value">
+            <div class="top" [ariaValueNow]="locations">{{locations}}</div>
+            <div class="bottom">Locations</div>
+        </div>
+    </div>
+    <div class="widget green">
+        <div class="icon">
+            <i class="fas fa-industry"></i>
+        </div>
+        <div class="value">
+            <div class="top" [ariaValueNow]="sectors">{{sectors}}</div>
+            <div class="bottom">Sectors</div>
+        </div>
+    </div>
+    <div class="widget yellow">
+        <div class="icon">
+            <i class="fas fa-lightbulb"></i>
+        </div>
+        <div class="value">
+            <div class="top" [ariaValueNow]="topics">{{topics}}</div>
+            <div class="bottom">Topics</div>
+        </div>
+    </div>
+    <div class="widget blue">
+        <div class="icon">
+            <i class="fas fa-newspaper"></i>
+        </div>
+        <div class="value">
+            <div class="top" [ariaValueNow]="titles">{{titles}}</div>
+            <div class="bottom">Titles</div>
+        </div>
+    </div>
+</div>

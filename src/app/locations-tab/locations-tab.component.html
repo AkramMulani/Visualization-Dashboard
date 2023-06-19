@@ -1,0 +1,21 @@
+<div class="locations-container">
+    <div class="location-cards" *ngFor="let location of l_container">
+        <div class="card" (click)="showMap(location.cityLat,location.cityLng)">
+            <div class="icon">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="values">
+                <div class="top">
+                    <div class="coordinates v">({{location.cityLat}}-{{location.cityLng}})</div>
+                    <div class="sectors v">{{location.sector}}</div>
+                    <div class="swots v">{{location.swot}}</div>
+                    <div class="cities v">{{location.city}}</div>
+                    <div class="countries v">{{location.country}}</div>
+                </div>
+                <div class="bottom">
+                    <div class="insights v">{{location.insight}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
